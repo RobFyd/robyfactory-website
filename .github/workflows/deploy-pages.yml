@@ -1,5 +1,6 @@
 name: Deploy to GitHub Pages
 
+# Publishes the current main branch after repository or source changes.
 on:
   push:
     branches: [main]
