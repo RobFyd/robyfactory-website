@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const basePath = process.env.NODE_ENV === "production" ? "/robyfactory-website" : "";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -17,8 +19,9 @@ export const metadata: Metadata = {
   description:
     "Custom 3D printing, prototypes, small-batch production and CAD design from RobyFactory in Worcester, UK.",
   icons: {
-    icon: "favicon.svg",
-    shortcut: "favicon.svg",
+    icon: `${basePath}/RFLogo192.png`,
+    shortcut: `${basePath}/RFLogo192.png`,
+    apple: `${basePath}/RFLogo192.png`,
   },
 };
 
