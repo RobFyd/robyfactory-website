@@ -64,9 +64,9 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="RobyFactory home">
-          <span className="brand-mark" aria-hidden="true">
+          {/* <span className="brand-mark" aria-hidden="true">
             R
-          </span>
+          </span> */}
           <span>ROBYFACTORY</span>
         </a>
 
