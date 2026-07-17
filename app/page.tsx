@@ -64,9 +64,12 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="RobyFactory home">
-          <span className="brand-mark" aria-hidden="true">
-            R
-          </span>
+          <img
+            className="brand-logo"
+            src={`${basePath}/RFLogo192.png`}
+            alt=""
+            aria-hidden="true"
+          />
           <span>ROBYFACTORY</span>
         </a>
 
