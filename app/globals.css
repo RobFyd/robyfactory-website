@@ -117,8 +117,8 @@ textarea {
   transition: right 180ms ease;
 }
 
-.nav > a:hover { color: white; }
-.nav > a:hover::after { right: 0; }
+.nav > a:not(.nav-cta):hover { color: white; }
+.nav > a:not(.nav-cta):hover::after { right: 0; }
 
 .nav-cta {
   display: inline-flex;
@@ -128,6 +128,13 @@ textarea {
   color: var(--ink);
   background: var(--lime);
   border-radius: 4px;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.nav-cta:hover {
+  color: var(--ink);
+  background: #d7ff6f;
+  transform: translateY(-2px);
 }
 
 .nav-cta span { font-size: 16px; }
