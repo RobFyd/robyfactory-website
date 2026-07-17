@@ -299,7 +299,13 @@ export default function Home() {
 
       <footer>
         <a className="brand footer-brand" href="#top">
-          <span className="brand-mark">R</span><span>ROBYFACTORY</span>
+          <img
+            className="brand-logo"
+            src={`${basePath}/RFLogo192.png`}
+            alt=""
+            aria-hidden="true"
+          />
+          <span>ROBYFACTORY</span>
         </a>
         <p>Custom 3D printing & CAD design · Worcester, UK</p>
         <a href="#top" className="back-top">BACK TO TOP ↑</a>
