@@ -199,6 +199,56 @@ export default function Home() {
         </p>
       </section>
 
+      <section className="capabilities-section" id="capabilities">
+        <div className="capabilities-intro">
+          <p className="eyebrow eyebrow-dark"><span /> Why RobyFactory</p>
+          <h2>Built around<br /><em>your project.</em></h2>
+          <p>
+            Every job is reviewed individually - from the first idea and material
+            choice to print settings, finishing and delivery.
+          </p>
+          <a className="text-link" href="#contact">Tell us what you need <span>↗</span></a>
+        </div>
+
+        <div className="capabilities-grid">
+          <article className="capability-card capability-dark">
+            <span className="capability-index">CAP / 01</span>
+            <strong>450<small> mm</small></strong>
+            <div>
+              <h3>Large-format printing</h3>
+              <p>Room for ambitious display pieces and practical oversized parts.</p>
+            </div>
+          </article>
+
+          <article className="capability-card capability-lime">
+            <span className="capability-index">CAP / 02</span>
+            <strong>4<small> colours</small></strong>
+            <div>
+              <h3>Multi-colour production</h3>
+              <p>Bold colour combinations without relying on paint or post-processing.</p>
+            </div>
+          </article>
+
+          <article className="capability-card">
+            <span className="capability-index">CAP / 03</span>
+            <strong className="capability-word">PLA <i>→</i> TPU</strong>
+            <div>
+              <h3>Material choice</h3>
+              <p>Standard, silk, durable and flexible materials selected for the job.</p>
+            </div>
+          </article>
+
+          <article className="capability-card">
+            <span className="capability-index">CAP / 04</span>
+            <strong className="capability-word">1 <i>→</i> batch</strong>
+            <div>
+              <h3>Flexible quantities</h3>
+              <p>One-off replacements, prototypes and repeatable small production runs.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section className="cad-section" id="cad">
         <div className="cad-visual" aria-label="CAD modelling illustration">
           <div className="blueprint-grid" />

@@ -440,6 +440,72 @@ h2 em {
 .work-note { margin: 34px 0 0; color: rgba(255,255,255,0.43); font-size: 13px; text-align: right; }
 .work-note a { margin-left: 5px; color: white; font-weight: 700; border-bottom: 1px solid var(--lime); }
 
+.capabilities-section {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(320px, 0.72fr) minmax(560px, 1.28fr);
+  gap: clamp(55px, 7vw, 120px);
+  padding: 130px max(36px, calc((100vw - 1480px) / 2));
+  background: var(--paper);
+}
+
+.capabilities-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.45;
+  background-image:
+    linear-gradient(rgba(10,10,11,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10,10,11,0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.capabilities-intro,
+.capabilities-grid { position: relative; z-index: 1; }
+.capabilities-intro { align-self: center; }
+.capabilities-intro h2 { font-size: clamp(48px, 5.5vw, 82px); }
+.capabilities-intro > p:not(.eyebrow) { max-width: 470px; margin: 28px 0 34px; color: var(--muted); font-size: 16px; line-height: 1.75; }
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+
+.capability-card {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 27px 29px 30px;
+  background: rgba(251,250,246,0.72);
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.capability-card:hover {
+  z-index: 2;
+  transform: translateY(-7px);
+  box-shadow: 0 16px 35px rgba(10,10,11,0.13);
+}
+
+.capability-index { font-family: monospace; font-size: 9px; letter-spacing: 0.15em; opacity: 0.52; }
+.capability-card > strong { display: block; font-size: clamp(48px, 5vw, 74px); line-height: 0.92; letter-spacing: -0.07em; }
+.capability-card > strong small { font-size: 0.28em; letter-spacing: 0.02em; text-transform: uppercase; }
+.capability-card > strong.capability-word { font-size: clamp(30px, 3.1vw, 48px); letter-spacing: -0.055em; }
+.capability-word i { color: var(--brand-red); font-style: normal; }
+.capability-card h3 { margin: 0 0 10px; font-size: 19px; letter-spacing: -0.025em; }
+.capability-card p { max-width: 310px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.65; }
+
+.capability-dark { background: var(--ink); color: white; }
+.capability-dark p { color: rgba(255,255,255,0.52); }
+.capability-lime { background: var(--lime); }
+
 .cad-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(420px, 0.88fr);
@@ -573,6 +639,8 @@ footer > p { margin: 0; color: rgba(255,255,255,0.36); font-size: 11px; text-ali
   .service-card { min-height: 0; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .service-card:last-child { border-bottom: 0; }
   .service-card h3 { margin-top: 34px; }
+  .capabilities-section { grid-template-columns: 1fr; }
+  .capabilities-intro > p:not(.eyebrow) { max-width: 650px; }
   .cad-section { grid-template-columns: 0.9fr 1.1fr; }
   .contact-section { grid-template-columns: 1fr; gap: 65px; }
   .contact-meta { grid-template-columns: repeat(3, 1fr); }
@@ -594,6 +662,7 @@ footer > p { margin: 0; color: rgba(255,255,255,0.36); font-size: 11px; text-ali
   .scroll-hint { display: none; }
   .section,
   .work-section,
+  .capabilities-section,
   .contact-section { padding: 90px 21px; }
   .section-heading { grid-template-columns: 1fr; gap: 25px; margin-bottom: 48px; }
   .section-heading h2,
@@ -603,6 +672,10 @@ footer > p { margin: 0; color: rgba(255,255,255,0.36); font-size: 11px; text-ali
   .project-grid { grid-template-columns: 1fr; grid-template-rows: repeat(3, 420px); }
   .project-card:first-child { grid-row: auto; }
   .work-note { text-align: left; line-height: 1.6; }
+  .capabilities-section { gap: 48px; }
+  .capabilities-intro h2 { font-size: clamp(46px, 13vw, 64px); }
+  .capabilities-grid { grid-template-columns: 1fr; }
+  .capability-card { min-height: 270px; }
   .cad-section { grid-template-columns: 1fr; }
   .cad-visual { min-height: 520px; }
   .model-core { width: 250px; }
