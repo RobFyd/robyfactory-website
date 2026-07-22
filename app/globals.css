@@ -440,6 +440,64 @@ h2 em {
 .work-note { margin: 34px 0 0; color: rgba(255,255,255,0.43); font-size: 13px; text-align: right; }
 .work-note a { margin-left: 5px; color: white; font-weight: 700; border-bottom: 1px solid var(--lime); }
 
+.cosplay-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(420px, 0.9fr);
+  min-height: 790px;
+  background: var(--paper);
+}
+
+.cosplay-visual {
+  position: relative;
+  min-height: 680px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: radial-gradient(circle at 50% 45%, #292238 0, #15131c 44%, #09090c 100%);
+}
+
+.cosplay-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.11;
+  background-image: linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.helmet { position: relative; z-index: 3; width: min(31vw, 390px); aspect-ratio: 0.82; filter: drop-shadow(32px 38px 50px rgba(0,0,0,0.48)); transform: perspective(800px) rotateY(-8deg) rotateZ(-2deg); }
+.helmet-shell { position: absolute; inset: 0 8% 12%; background: linear-gradient(135deg, #c7ff2e 0 16%, #91c511 17% 25%, #2b2a31 26% 35%, #a77cff 36% 62%, #56309d 78%); clip-path: polygon(19% 7%, 50% 0, 82% 8%, 98% 34%, 91% 78%, 70% 98%, 52% 88%, 33% 99%, 8% 79%, 1% 35%); }
+.helmet-shell::after { content: ""; position: absolute; inset: 4%; opacity: 0.32; background: repeating-linear-gradient(0deg, transparent 0 7px, rgba(255,255,255,0.28) 8px); clip-path: inherit; }
+.helmet-visor { position: absolute; z-index: 3; top: 25%; left: 13%; width: 74%; height: 25%; background: linear-gradient(160deg, #ff6570, #7a1526 55%, #160c13); border: 3px solid #111015; clip-path: polygon(0 10%, 50% 0, 100% 11%, 88% 83%, 52% 100%, 12% 83%); box-shadow: inset 0 5px 12px rgba(255,255,255,0.22), 0 7px 0 #19171d; }
+.helmet-face { position: absolute; z-index: 2; top: 48%; left: 24%; width: 52%; height: 38%; background: linear-gradient(140deg, #2d2b34, #111015); clip-path: polygon(0 0, 50% 14%, 100% 0, 84% 72%, 51% 100%, 15% 72%); }
+.helmet-face::before { content: ""; position: absolute; left: 47%; top: 22%; width: 6%; height: 60%; background: var(--brand-red); clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+.helmet-detail { position: absolute; z-index: 4; top: 56%; width: 23%; height: 18%; border: 2px solid rgba(199,255,46,0.7); }
+.detail-left { left: 7%; transform: skewY(18deg); border-right: 0; }
+.detail-right { right: 7%; transform: skewY(-18deg); border-left: 0; }
+.helmet-orbit { position: absolute; z-index: 1; width: min(42vw, 520px); aspect-ratio: 1; border: 1px solid rgba(199,255,46,0.22); border-radius: 50%; transform: rotateX(68deg) rotateZ(-12deg); }
+.orbit-two { width: min(52vw, 660px); border-color: rgba(167,124,255,0.19); transform: rotateY(69deg) rotateZ(18deg); }
+
+.cosplay-callout { position: absolute; z-index: 5; color: rgba(255,255,255,0.58); font: 8px monospace; letter-spacing: 0.13em; }
+.cosplay-callout::after { content: ""; position: absolute; top: 50%; width: 70px; height: 1px; background: rgba(255,255,255,0.26); }
+.cosplay-callout span { margin-right: 6px; color: var(--lime); }
+.callout-scale { top: 20%; left: 7%; }
+.callout-scale::after { left: calc(100% + 10px); }
+.callout-split { top: 47%; right: 6%; }
+.callout-split::after { right: calc(100% + 10px); }
+.callout-finish { bottom: 20%; left: 8%; }
+.callout-finish::after { left: calc(100% + 10px); }
+.layer-meter { position: absolute; z-index: 5; right: 6%; bottom: 7%; width: 150px; color: rgba(255,255,255,0.38); font: 8px monospace; letter-spacing: 0.1em; }
+.layer-meter i { display: block; height: 3px; margin-top: 9px; background: linear-gradient(90deg, var(--brand-red) 0 68%, rgba(255,255,255,0.12) 68%); }
+.cosplay-caption { position: absolute; z-index: 5; top: 6%; right: 6%; color: rgba(255,255,255,0.3); font: 8px monospace; letter-spacing: 0.14em; }
+
+.cosplay-copy { display: flex; flex-direction: column; justify-content: center; padding: 100px clamp(50px, 7vw, 130px); border-left: 1px solid var(--line); }
+.cosplay-copy > p:not(.eyebrow) { max-width: 590px; margin-top: 30px; color: var(--muted); font-size: 15px; line-height: 1.75; }
+.cosplay-features { margin-top: 38px; border-top: 1px solid var(--line); }
+.cosplay-features div { display: grid; grid-template-columns: 28px 1fr; gap: 5px 16px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.cosplay-features span { grid-row: 1 / 3; color: var(--brand-red); font: 10px monospace; padding-top: 3px; }
+.cosplay-features strong { font-size: 14px; }
+.cosplay-features small { color: var(--muted); font-size: 11px; line-height: 1.5; }
+
 .capabilities-section {
   position: relative;
   overflow: hidden;
@@ -734,6 +792,9 @@ footer > p { margin: 0; color: rgba(255,255,255,0.36); font-size: 11px; text-ali
   .service-card { min-height: 0; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .service-card:last-child { border-bottom: 0; }
   .service-card h3 { margin-top: 34px; }
+  .cosplay-section { grid-template-columns: 1fr; }
+  .cosplay-copy { padding-block: 110px; border-top: 1px solid var(--line); border-left: 0; }
+  .helmet { width: min(43vw, 390px); }
   .capabilities-section { grid-template-columns: 1fr; }
   .capabilities-intro > p:not(.eyebrow) { max-width: 650px; }
   .reverse-section { grid-template-columns: 1fr; }
@@ -770,6 +831,16 @@ footer > p { margin: 0; color: rgba(255,255,255,0.36); font-size: 11px; text-ali
   .project-grid { grid-template-columns: 1fr; grid-template-rows: repeat(3, 420px); }
   .project-card:first-child { grid-row: auto; }
   .work-note { text-align: left; line-height: 1.6; }
+  .cosplay-visual { min-height: 560px; }
+  .helmet { width: min(68vw, 320px); }
+  .helmet-orbit { width: 430px; }
+  .orbit-two { width: 510px; }
+  .cosplay-copy { padding: 90px 21px; }
+  .cosplay-copy h2 { font-size: clamp(46px, 13vw, 64px); }
+  .cosplay-callout::after { width: 35px; }
+  .callout-scale { left: 4%; }
+  .callout-split { right: 3%; }
+  .callout-finish { left: 4%; }
   .capabilities-section { gap: 48px; }
   .capabilities-intro h2 { font-size: clamp(46px, 13vw, 64px); }
   .capabilities-grid { grid-template-columns: 1fr; }

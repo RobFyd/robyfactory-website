@@ -199,6 +199,42 @@ export default function Home() {
         </p>
       </section>
 
+      <section className="cosplay-section" id="cosplay">
+        <div className="cosplay-visual" aria-label="Stylised 3D printed cosplay helmet illustration">
+          <div className="cosplay-grid" />
+          <div className="helmet-orbit orbit-one" />
+          <div className="helmet-orbit orbit-two" />
+          <div className="helmet">
+            <div className="helmet-shell" />
+            <div className="helmet-visor" />
+            <div className="helmet-face" />
+            <div className="helmet-detail detail-left" />
+            <div className="helmet-detail detail-right" />
+          </div>
+          <div className="cosplay-callout callout-scale"><span>01</span> CUSTOM SCALE</div>
+          <div className="cosplay-callout callout-split"><span>02</span> SMART PART SPLIT</div>
+          <div className="cosplay-callout callout-finish"><span>03</span> FINISH-READY</div>
+          <div className="layer-meter"><span>LAYER / 0.16 MM</span><i /></div>
+          <div className="cosplay-caption">HELMET STUDY / RF-C01</div>
+        </div>
+
+        <div className="cosplay-copy">
+          <p className="eyebrow eyebrow-dark"><span /> Cosplay fabrication</p>
+          <h2>Build the character.<br /><em>Wear the detail.</em></h2>
+          <p>
+            From statement helmets and armour panels to props and small costume
+            details, we turn digital files into lightweight, wearable parts made
+            for convention floors, display shelves and the camera.
+          </p>
+          <div className="cosplay-features">
+            <div><span>01</span><strong>Scaled to fit</strong><small>Parts adjusted around your measurements.</small></div>
+            <div><span>02</span><strong>Built in sections</strong><small>Smart splits for strength, assembly and transport.</small></div>
+            <div><span>03</span><strong>Ready to finish</strong><small>Clean prints prepared for sanding, paint and weathering.</small></div>
+          </div>
+          <a className="text-link" href="#contact">Start a cosplay project <span>↗</span></a>
+        </div>
+      </section>
+
       <section className="capabilities-section" id="capabilities">
         <div className="capabilities-intro">
           <p className="eyebrow eyebrow-dark"><span /> Why RobyFactory</p>
