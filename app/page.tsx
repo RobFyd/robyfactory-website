@@ -249,6 +249,53 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="reverse-section" id="reverse-engineering">
+        <div className="reverse-copy">
+          <p className="eyebrow"><span /> Reverse engineering</p>
+          <h2>From worn part<br /><em>to digital model.</em></h2>
+          <p>
+            When drawings no longer exist, the original component becomes the
+            blueprint. We capture its critical geometry, rebuild it in CAD and
+            prepare a reliable replacement for 3D printing.
+          </p>
+
+          <ol className="reverse-steps">
+            <li><span>01</span><strong>Inspect & measure</strong></li>
+            <li><span>02</span><strong>Rebuild in CAD</strong></li>
+            <li><span>03</span><strong>Test, refine & print</strong></li>
+          </ol>
+
+          <a className="text-link reverse-link" href="#contact">Discuss a replacement part <span>↗</span></a>
+        </div>
+
+        <div className="reverse-visual" aria-label="Schematic showing a physical part measured and rebuilt as a CAD model">
+          <div className="reverse-grid" />
+          <div className="reverse-stage reverse-stage-source">
+            <span className="reverse-label">01 / PHYSICAL PART</span>
+            <div className="part-shape part-original"><i /><b /></div>
+            <small>WORN / DAMAGED</small>
+          </div>
+
+          <div className="reverse-transfer" aria-hidden="true">
+            <span>MEASURE</span>
+            <i />
+          </div>
+
+          <div className="reverse-stage reverse-stage-model">
+            <span className="reverse-label">02 / CAD REBUILD</span>
+            <div className="part-shape part-model"><i /><b /></div>
+            <small>PRINT-READY</small>
+          </div>
+
+          <div className="dimension dimension-width"><span>Ø 68.40</span></div>
+          <div className="dimension dimension-height"><span>24.75</span></div>
+          <div className="scan-point scan-a" />
+          <div className="scan-point scan-b" />
+          <div className="scan-point scan-c" />
+          <div className="reverse-status"><i /> GEOMETRY CAPTURED</div>
+        </div>
+      </section>
+
       <section className="cad-section" id="cad">
         <div className="cad-visual" aria-label="CAD modelling illustration">
           <div className="blueprint-grid" />
@@ -266,7 +313,7 @@ export default function Home() {
         </div>
 
         <div className="cad-copy">
-          <p className="eyebrow eyebrow-dark"><span /> CAD & reverse engineering</p>
+          <p className="eyebrow eyebrow-dark"><span /> CAD design & modelling</p>
           <h2>Need the model<br /><em>before the print?</em></h2>
           <p>
             We can turn a sketch, measurement or physical part into a clean,
