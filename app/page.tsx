@@ -235,6 +235,44 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="functional-section" id="functional-parts">
+        <div className="functional-copy">
+          <p className="eyebrow"><span /> Functional parts</p>
+          <h2>Made to fit.<br /><em>Built to work.</em></h2>
+          <p>
+            Practical prints for repairs, workshops and everyday use - from
+            brackets and housings to adapters, mounts and hard-to-find
+            replacement parts.
+          </p>
+
+          <div className="functional-specs">
+            <div><small>FIT</small><strong>Measured for the job</strong></div>
+            <div><small>LOAD</small><strong>Geometry that works</strong></div>
+            <div><small>MAT.</small><strong>Chosen for real use</strong></div>
+          </div>
+
+          <a className="text-link functional-link" href="#contact">Request a functional part <span>↗</span></a>
+        </div>
+
+        <div className="functional-visual" aria-label="Technical illustration of a functional 3D printed mounting bracket">
+          <div className="functional-grid" />
+          <div className="bracket-shadow" />
+          <div className="bracket-part">
+            <div className="bracket-base"><i /><b /></div>
+            <div className="bracket-upright"><i /></div>
+            <div className="bracket-rib rib-left" />
+            <div className="bracket-rib rib-right" />
+          </div>
+          <div className="force-arrow"><span>LOAD</span><i /></div>
+          <div className="functional-dimension dimension-x"><span>86.00 mm</span></div>
+          <div className="functional-dimension dimension-y"><span>54.50</span></div>
+          <div className="material-chip"><span>MAT / PETG</span><strong>TOUGH + HEAT RESISTANT</strong></div>
+          <div className="functional-note note-tolerance">± 0.20 / FIT</div>
+          <div className="functional-note note-infill">40% / GYROID</div>
+          <div className="functional-status"><i /> READY FOR USE</div>
+        </div>
+      </section>
+
       <section className="capabilities-section" id="capabilities">
         <div className="capabilities-intro">
           <p className="eyebrow eyebrow-dark"><span /> Why RobyFactory</p>
