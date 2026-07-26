@@ -70,7 +70,7 @@ export default function Home() {
             alt=""
             aria-hidden="true"
           />
-          <span>ROBYFACTORY</span>
+          <span>RobyFactory</span>
         </a>
 
         <button
